@@ -2,8 +2,8 @@ GO_MODULE := github.com/vartikaEcobee/my-proto-repo
 
 .PHONY: clean
 clean: 
-  rm -fR ./protogen
-  mkdir -p ./protogen/go
+	rm -fR ./protogen
+	mkdir -p ./protogen/go
 
 .PHONY: protoc-go
 protoc-go:
