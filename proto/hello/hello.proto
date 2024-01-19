@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package hello;
 
-option go_package = "github.com/vartikaEcobee/my-proto-repo/protogen/go/hello"
+option go_package = "github.com/vartikaEcobee/my-proto-repo/protogen/go/hello";
 
 message HelloRequest { 
     string name = 1;
