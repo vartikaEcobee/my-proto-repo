@@ -21,5 +21,5 @@ pipeline-init:
   go install google.goland.org/grpc/cmd/protoc-gen-go-grpc@latest 
 
 .PHONY: pipeline-build
-pipiline-build: pipeline-init build
+pipeline-build: pipeline-init build
   
