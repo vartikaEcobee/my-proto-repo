@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package hello;
+
+option go_package = "github.com/ecobee/my-proto-repo/protogen/go/hello"
+
+message HelloRequest {
+    string great = 1;
+}
+
+message HelloResponse {
+    string great = 1;
+}
+
+service HelloService {
+    rpc SayHello(HelloRequest) returns (HelloResponse) {} 
+}

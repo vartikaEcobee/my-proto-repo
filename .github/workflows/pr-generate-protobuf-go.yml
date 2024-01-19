@@ -1,0 +1,25 @@
+name: Pull request - check protobuf - go
+
+on:
+  pull_request:
+    paths:
+      - 'proto/**.proto'
+
+jobs:
+  generate-protobuf-go:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+      - name: Install go
+        uses: actions/setup-go@v3
+        with:
+          go-version: '1.20'
+          check-latest: false
+          cache: true
+      - name: generate go source
+        shell: bash
+        run:
+          make pipeline-build
