@@ -4,7 +4,7 @@ package payment;
 
 import "proto/transaction/cart.proto";
 
-option go_package = "github.com/vartikaEcobee/my-proto-repo/protogen/go/payement";
+option go_package = "github.com/ecobee/my-proto-repo/protogen/go/payement";
 
 message PaymentRequest {
     transaction.Cart cart = 1;

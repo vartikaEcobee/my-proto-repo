@@ -2,15 +2,14 @@ syntax = "proto3";
 
 package hello;
 
-option go_package = "github.com/vartikaEcobee/my-proto-repo/protogen/go/hello";
+option go_package = "github.com/ecobee/my-proto-repo/protogen/go/hello"
 
-message HelloRequest { 
-    string name = 1;
-    uint32 age = 16;
-  }
+message HelloRequest {
+    string great = 1;
+}
 
 message HelloResponse {
-    string greet = 1;
+    string great = 1;
 }
 
 service HelloService {
