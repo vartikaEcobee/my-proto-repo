@@ -1,4 +1,4 @@
-GO_MODULE := github.com/ecobee/my-proto-repo
+GO_MODULE := github.com/vartikaEcobee/my-proto-repo
 
 .PHONY: clean
 clean: 
