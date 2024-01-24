@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package bank;
 
-import "proto/google/type/date.proto"
+import "proto/google/type/date.proto";
 
 option go_package = "github.com/vartikaEcobee/my-proto-repo/protogen/go/bank";
 
